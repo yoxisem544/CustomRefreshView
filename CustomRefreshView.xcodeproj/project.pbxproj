@@ -14,6 +14,9 @@
 		63EC77761CC75940008025A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63EC77741CC75940008025A7 /* LaunchScreen.storyboard */; };
 		63EC77811CC75941008025A7 /* CustomRefreshViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EC77801CC75941008025A7 /* CustomRefreshViewTests.swift */; };
 		63EC778C1CC75941008025A7 /* CustomRefreshViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EC778B1CC75941008025A7 /* CustomRefreshViewUITests.swift */; };
+		63EC779A1CC7595E008025A7 /* CustomRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EC77991CC7595E008025A7 /* CustomRefreshView.swift */; };
+		63EC779C1CC75A9B008025A7 /* f.png in Resources */ = {isa = PBXBuildFile; fileRef = 63EC779B1CC75A9B008025A7 /* f.png */; };
+		63EC779E1CC7B848008025A7 /* CustomRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EC779D1CC7B848008025A7 /* CustomRefreshControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		63EC77871CC75941008025A7 /* CustomRefreshViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomRefreshViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63EC778B1CC75941008025A7 /* CustomRefreshViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRefreshViewUITests.swift; sourceTree = "<group>"; };
 		63EC778D1CC75941008025A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63EC77991CC7595E008025A7 /* CustomRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRefreshView.swift; sourceTree = "<group>"; };
+		63EC779B1CC75A9B008025A7 /* f.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = f.png; sourceTree = "<group>"; };
+		63EC779D1CC7B848008025A7 /* CustomRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRefreshControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,8 @@
 		63EC775F1CC75940008025A7 = {
 			isa = PBXGroup;
 			children = (
+				63EC779D1CC7B848008025A7 /* CustomRefreshControl.swift */,
+				63EC77991CC7595E008025A7 /* CustomRefreshView.swift */,
 				63EC776A1CC75940008025A7 /* CustomRefreshView */,
 				63EC777F1CC75941008025A7 /* CustomRefreshViewTests */,
 				63EC778A1CC75941008025A7 /* CustomRefreshViewUITests */,
@@ -103,6 +111,7 @@
 				63EC77721CC75940008025A7 /* Assets.xcassets */,
 				63EC77741CC75940008025A7 /* LaunchScreen.storyboard */,
 				63EC77771CC75940008025A7 /* Info.plist */,
+				63EC779B1CC75A9B008025A7 /* f.png */,
 			);
 			path = CustomRefreshView;
 			sourceTree = "<group>";
@@ -231,6 +240,7 @@
 			files = (
 				63EC77761CC75940008025A7 /* LaunchScreen.storyboard in Resources */,
 				63EC77731CC75940008025A7 /* Assets.xcassets in Resources */,
+				63EC779C1CC75A9B008025A7 /* f.png in Resources */,
 				63EC77711CC75940008025A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63EC779E1CC7B848008025A7 /* CustomRefreshControl.swift in Sources */,
 				63EC776E1CC75940008025A7 /* ViewController.swift in Sources */,
 				63EC776C1CC75940008025A7 /* AppDelegate.swift in Sources */,
+				63EC779A1CC7595E008025A7 /* CustomRefreshView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
