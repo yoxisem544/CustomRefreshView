@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		637547801CCA4E3200BC3BBD /* RefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6375477F1CCA4E3200BC3BBD /* RefreshView.swift */; };
+		637547841CCB1AAA00BC3BBD /* flame.png in Resources */ = {isa = PBXBuildFile; fileRef = 637547811CCB1AAA00BC3BBD /* flame.png */; };
+		637547851CCB1AAA00BC3BBD /* bear.png in Resources */ = {isa = PBXBuildFile; fileRef = 637547821CCB1AAA00BC3BBD /* bear.png */; };
+		637547861CCB1AAA00BC3BBD /* spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 637547831CCB1AAA00BC3BBD /* spaceship.png */; };
 		63EC776C1CC75940008025A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EC776B1CC75940008025A7 /* AppDelegate.swift */; };
 		63EC776E1CC75940008025A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EC776D1CC75940008025A7 /* ViewController.swift */; };
 		63EC77711CC75940008025A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63EC776F1CC75940008025A7 /* Main.storyboard */; };
@@ -38,6 +41,9 @@
 
 /* Begin PBXFileReference section */
 		6375477F1CCA4E3200BC3BBD /* RefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshView.swift; sourceTree = "<group>"; };
+		637547811CCB1AAA00BC3BBD /* flame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flame.png; sourceTree = "<group>"; };
+		637547821CCB1AAA00BC3BBD /* bear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bear.png; sourceTree = "<group>"; };
+		637547831CCB1AAA00BC3BBD /* spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spaceship.png; sourceTree = "<group>"; };
 		63EC77681CC75940008025A7 /* CustomRefreshView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomRefreshView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63EC776B1CC75940008025A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63EC776D1CC75940008025A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +118,9 @@
 				63EC77741CC75940008025A7 /* LaunchScreen.storyboard */,
 				63EC77771CC75940008025A7 /* Info.plist */,
 				63EC779B1CC75A9B008025A7 /* f.png */,
+				637547811CCB1AAA00BC3BBD /* flame.png */,
+				637547821CCB1AAA00BC3BBD /* bear.png */,
+				637547831CCB1AAA00BC3BBD /* spaceship.png */,
 			);
 			path = CustomRefreshView;
 			sourceTree = "<group>";
@@ -239,9 +248,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				63EC77761CC75940008025A7 /* LaunchScreen.storyboard in Resources */,
+				637547861CCB1AAA00BC3BBD /* spaceship.png in Resources */,
 				63EC77731CC75940008025A7 /* Assets.xcassets in Resources */,
 				63EC779C1CC75A9B008025A7 /* f.png in Resources */,
 				63EC77711CC75940008025A7 /* Main.storyboard in Resources */,
+				637547841CCB1AAA00BC3BBD /* flame.png in Resources */,
+				637547851CCB1AAA00BC3BBD /* bear.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

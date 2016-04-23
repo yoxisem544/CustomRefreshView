@@ -56,7 +56,9 @@ class ViewController: UIViewController {
 
 extension ViewController : RefreshViewDelegate {
 	func refreshViewBeginRefreshing() {
-		
+		delay(4.0) {
+			self.r2?.endRefreshing()
+		}
 	}
 	
 	func refreshViewEndRefreshing() {
