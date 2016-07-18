@@ -11,8 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 	
 	let scrollView = UIScrollView()
-	var refreshView: CustomRefreshView?
-	var r2: RefreshView?
+	var refreshView: RefreshView?
 	
 	func delay(time: Double, block: () -> Void) {
 		let delay = dispatch_time(DISPATCH_TIME_NOW, Int64(Double(NSEC_PER_SEC) * time))
@@ -20,7 +19,7 @@ class ViewController: UIViewController {
 			block()
 		})
 	}
-
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
@@ -33,31 +32,16 @@ class ViewController: UIViewController {
 		view.addSubview(scrollView)
 		
 		let refreshViewRect = CGRect(x: 0, y: -100, width: UIScreen.mainScreen().bounds.width, height: 100)
-		refreshView = CustomRefreshView(frame: refreshViewRect, rootScrollView: scrollView, delegate: self)
-//		scrollView.addSubview(refreshView!)
 		
-		r2 = RefreshView(frame: refreshViewRect, rootScrollView: scrollView, delegate: self)
-		scrollView.addSubview(r2!)
-	}
-	
-	override func viewDidAppear(animated: Bool) {
-		super.viewDidAppear(animated)
-		
-		delay(2.0) { 
-//			self.scrollView.contentInset.top = 100
-		}
-	}
-
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
+		refreshView = RefreshView(frame: refreshViewRect, rootScrollView: scrollView, delegate: self)
+		scrollView.addSubview(refreshView!)
 	}
 }
 
 extension ViewController : RefreshViewDelegate {
 	func refreshViewBeginRefreshing() {
 		delay(4.0) {
-			self.r2?.endRefreshing()
+			self.refreshView?.endRefreshing()
 		}
 	}
 	
@@ -68,19 +52,6 @@ extension ViewController : RefreshViewDelegate {
 
 extension ViewController : UIScrollViewDelegate {
 	func scrollViewDidScroll(scrollView: UIScrollView) {
-
-	}
-}
-
-extension ViewController : CustomRefreshViewDelegate {
-	
-	func customRefreshViewBeginRefreshing() {
-		delay(4.0) { 
-			self.refreshView?.endRefresh()
-		}
-	}
-	
-	func customRefreshViewEndRefreshing() {
 		
 	}
 }
